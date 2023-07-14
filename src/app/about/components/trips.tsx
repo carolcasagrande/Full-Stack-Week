@@ -1,21 +1,7 @@
-import { prisma } from '@/lib/prisma';
-import React from 'react'
+import React, { useState } from "react";
 
-const getTrips = async () => {
-    const trips = await prisma.trip.findMany({});
+const Trips = () => {
+  return <div>Trips</div>;
+};
 
-    return trips;
-}
-
-const Trips = async () => {
-    const data = await fetch('http://jsonplaceholder.typecode.com/posts').then((res) => res.json());
-    return (
-        <div>
-            {data.map((i: any) => (
-                <p key={i.id}>{i.title}</p>
-            ))}
-        </div>
-    )
-}
-
-export default Trips
+export default Trips;

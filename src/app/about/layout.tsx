@@ -2,7 +2,10 @@ import React, {ReactNode} from 'react';
 
 const Layout = ({children}: {children: ReactNode}) => {
     return (
-        <div>{children}</div>
+        <div>
+            <h2>About Layout</h2>
+            {children}
+        </div>
     )
 }
 
